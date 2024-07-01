@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Logo</title>
+    <style>
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+        }
+
+        div#maça {
+            width: 200px;
+            height: 245px;
+        }
+
+        div#maça::before {
+            position: absolute;
+            border-radius: 100% 0;
+            rotate: -7deg;
+            top: 3px;
+            right: 25%;
+            width: 53px;
+            height: 53px;
+            content: " ";
+            background-color: black;
+        }
+
+        span {
+            position: relative;
+            border-radius: 100%;
+            display: flex;
+            background-color: black;
+            width: 115px;
+            height: 170px;
+        }
+
+        span#esquerda {
+            position: absolute;
+            bottom: 0px;
+            left: 3px;
+            padding: 10px;
+            rotate: -20deg;
+        }
+
+        span#direita {
+            position: absolute;
+            bottom: 0;
+            right: 3px;
+            padding: 10px;
+            rotate: 20deg;
+        }
+
+        span#direita::before  {
+            content: " ";
+            position: absolute;
+            width: 80px;
+            height: 100px;
+            background-color: black;
+            bottom: -11px;
+            rotate: -3deg;
+            right: -6px;
+            border-radius: 0% 0% 90% 0%;
+        }
+
+        span#partedecima {
+            position: absolute;
+            border-radius: 0;
+            top: 67px;
+            right: 70px;
+            width: 70px;
+            height: 18px;
+            background-color: black;
+        }
+
+        span#partedecima::after {
+            content: " ";
+            position: absolute;
+            top: -8px;
+            left: 23px;
+            border-radius: 0% 0% 140% 140% / 0% 0% 200% 200%;
+            width: 34px;
+            height: 11px;
+            background-color: white;
+        }
+
+        span#partedecima::before {
+            content: " ";
+            position: absolute;
+            top: 10px;
+            left: 105px;
+            background-color: white;
+            width: 110px;
+            height: 110px;
+            border-radius: 100%;
+        }
+
+        span#partedebaixo {
+            position: absolute;
+            bottom: 4px;
+            rotate: -21deg;
+            left: 6.5px;
+            width: 80px;
+            height: 130px;
+            background-color: black;
+            border-radius: 55% 0% 100% 100% / 100% 0% 100% 100%;
+        }
+        
+        span#partedebaixo::before {
+            content: " ";
+            position: absolute;
+            width: 60px;
+            height: 150px;
+            background-color: black;
+            bottom: -10px;
+            border-radius: 100% 0% 100% 100%;
+        }
+
+        div#partedebaixo {
+            position: absolute;
+            width: 250px;
+            height: 30px;
+            background-color: white;
+            bottom: -25px;
+            left: 0px;
+        }
+
+        div#partedebaixo::after {
+            content: " ";
+            position: absolute;
+            right: 90px;
+            bottom: 25.9px;
+            width: 45px;
+            height: 10px;
+            background-color: black;
+            border-radius: 0px 0px 120% 100% / 0% 0% 194% 180%;
+            rotate: 0deg;
+        }
+
+        div#partedebaixo::before {
+            content: " ";
+            position: absolute;
+            left: 23px;
+            bottom: 26px;
+            width: 76px;
+            height: 71px;
+            background-color: black;
+            border-radius: 184px 0 0 232%;
+            rotate: 309deg;
+        }
+
+        span#maçadebaixo {
+            position: absolute;
+            width: 56px;
+            height: 20px;
+            border-radius: 140% 140% 0 0 / 200% 200% 0 0;
+            top: -4px;
+            left: 71px;
+            rotate: 1deg;
+            background: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>My Apple Logo made in CSS</h1>
+
+    <div id="maça">
+        <span id="esquerda"></span>
+        <span id="direita"></span>
+        <span id="partedecima"></span>
+        <span id="partedebaixo"></span>
+        <div id="partedebaixo"><span id="maçadebaixo"></span></div>
+    </div>
+
+    <h1>Apple Logo</h1>
+
+    <img src="apple-logo.png" alt="Apple-logo" width="200px">
+
+</body>
+</html>
